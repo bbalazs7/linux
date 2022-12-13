@@ -1,0 +1,12 @@
+# This is the network config written by 'subiquity'
+# Bridged networking ubuntu
+network:
+  ethernets:
+    eno1:
+      dhcp4: false
+  version: 2
+  bridges:
+    br0:
+      dhcp4: true
+      interfaces:
+        - eno1
